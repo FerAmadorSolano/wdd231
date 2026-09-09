@@ -4,13 +4,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
 
-    <link rel="stylesheet" href="styles/normalize.css">
+    <meta name="description" content="Personal home page for a web development work">
+
+    <meta name="author" content="Fernanda Amador">
+    <title>Home | Fernanda Amador</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/base.css">
+
+    <!-- JavaScript -->
+    <script src="scripts/general.js" defer></script>
+
 </head>
 
 <body>
-    <h1>WDD 231</h1>
+    <header>
+        <div class="header-content">
+            <img src="images/logo.svg" alt="logo">
+            <span id="title">The Secret Library</span>
+        </div>
+
+        <nav class="navigation">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="chamber.html">Chamber Project</a></li>
+                <li><a href="final.html">Final Project</a></li>
+            </ul>
+        </nav>
+
+        <button id="menu-btn" aria-label="Open Menu" aria-expanded="false">
+            ☰
+        </button>
+
+    </header>
+
+    <main>
+        <h1>Home</h1>
+        <section class="card about">
+            <h2>About Me</h2>
+            <p>Hi! My name is Fernanda Amador, and I am currently studying web development. I enjoy learning new things,
+                especially
+                when I can use my creativity to build something useful and meaningful. My interest in technology has
+                encouraged me to
+                learn HTML, CSS, JavaScript, and programming.
+
+                One of the things I enjoy most is reading. Books allow me to discover new ideas, learn from different
+                perspectives, and
+                escape into different worlds. Because of this, I decided to create a digital library and reading club
+                website as one of
+                my projects. I wanted to combine my interest in reading with the skills I have been developing in web
+                development.</p>
+        </section>
+
+        <section class="card photo">
+            <h2>Student Photo</h2>
+            <img src="images/profile.jpg" alt="Portrait of Fernanda Amador">
+        </section>
+
+        <section class="courses">
+            <h2>Web Certificate Courses</h2>
+
+            <div class="filters">
+                <button id="all">All</button>
+                <button id="cse">CSE</button>
+                <button id="wdd">WDD</button>
+            </div>
+
+
+            <div id="list" class="list"></div>
+
+            <p id="credits"> </p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-media">
+            <a href="https://www.linkedin.com/in/fernanda-amador-solano-im/" aria-label="LinkedIn">
+                <img src="images/linkedin.svg" alt="Linkedin">
+            </a>
+
+            <a href="https://github.com/FerAmadorSolano/" aria-label="GitHub">
+                <img src="images/github.svg" alt="GitHub">
+            </a>
+
+            <a href="#" aria-label="X">
+                <img src="images/facebook.svg" alt="Facebook">
+            </a>
+        </div>
+
+        <div>
+
+        </div>
+        <div class="last">
+            <p>
+                &copy; <span id="currentyear"></span> 🦋 Fernanda Amador 🦋 Mexico
+            </p>
+
+            <p id="lastModified"></p>
+        </div>
+
+    </footer>
 </body>
 
 </html>
