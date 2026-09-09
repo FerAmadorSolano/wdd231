@@ -1,0 +1,49 @@
+@media screen and (min-width: 768px) {
+
+    #menu-btn {
+        display: none;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav {
+        display: block;
+    }
+
+    .navigation {
+        display: flex;
+        gap: 1.5rem;
+        align-items: center;
+    }
+
+    .navigation a {
+        padding: .5rem;
+    }
+
+    .navigation ul {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    main {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    main h1 {
+        grid-column: 1 / -1;
+    }
+
+    .courses {
+        grid-column: 1 / -1;
+    }
+
+    .list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+
+}
