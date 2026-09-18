@@ -53,7 +53,7 @@ function displayMembers(members) {
             loading="lazy">
 
         <div class="member-info">
-            <h3>${member.name}</h3>
+            <h2>${member.name}</h2>
 
             <p>${member.address}</p>
 
