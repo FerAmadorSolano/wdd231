@@ -4,7 +4,7 @@
     --cream: #F5F0E6;
     --warm-beige: #E7DCC6;
     --soft-taupe: #CBBEB1;
-
+    --accent-color: #653D6B;
     --text-color: #4A4147;
     --dark-color: #342D33;
     --white: #FFFFFF;
@@ -91,6 +91,11 @@ nav a {
     text-decoration: none;
     color: var(--text-color);
     text-align: center;
+}
+
+nav a.active {
+    color: var(--accent-color);
+    border-bottom: 2px solid var(--accent-color);
 }
 
 main {

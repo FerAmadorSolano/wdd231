@@ -5,49 +5,56 @@
             "address": "Av. de la Independencia 503, Centro, Oaxaca de Juárez",
             "phone": "+52 951 514 9331",
             "website": "https://www.paradorsanmiguel.com",
-            "image": "parador-san-miguel.webp"
+            "image": "parador-san-miguel.webp",
+            "mLevel": 1
         },
         {
             "name": "Casa Oaxaca el Restaurante",
             "address": "Constitución 104-A, Centro, Oaxaca de Juárez",
             "phone": "+52 951 516 8889",
             "website": "#",
-            "image": "casa-oaxaca.webp"
+            "image": "casa-oaxaca.webp",
+            "mLevel": 3
         },
         {
             "name": "Restaurante Catedral",
             "address": "C. de Manuel García Vigil 105, Centro, Oaxaca de Juárez",
             "phone": "+52 951 516 3285",
             "website": "#",
-            "image": "restaurante-catedral.webp"
+            "image": "restaurante-catedral.webp",
+            "mLevel": 1
         },
         {
             "name": "Los Danzantes Oaxaca",
             "address": "Macedonio Alcalá 403, Centro, Oaxaca de Juárez",
             "phone": "+52 951 516 9096",
             "website": "#",
-            "image": "los-danzantes.webp"
+            "image": "los-danzantes.webp",
+            "mLevel": 2
         },
         {
             "name": "Oaxacatours",
             "address": "5 de Mayo 300, Centro, Oaxaca de Juárez",
             "phone": "+52 951 394 9193",
             "website": "#",
-            "image": "oaxacatours.webp"
+            "image": "oaxacatours.webp",
+            "mLevel": 3
         },
         {
             "name": "Mia de Oaxaca",
             "address": "Av. José María Morelos 601, Centro, Oaxaca de Juárez",
             "phone": "—",
             "website": "#",
-            "image": "mia-oaxaca.webp"
+            "image": "mia-oaxaca.webp",
+            "mLevel": 2
         },
         {
             "name": "Hotel Oaxaca Real",
             "address": "Manuel García Vigil 306, Centro, Oaxaca de Juárez",
             "phone": "+52 951 506 0708",
             "website": "#",
-            "image": "oaxaca-real.webp"
+            "image": "oaxaca-real.webp",
+            "mLevel": 1
         }
     ]
 }

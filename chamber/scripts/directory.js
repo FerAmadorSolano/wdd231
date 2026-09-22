@@ -62,6 +62,7 @@ function displayMembers(members) {
             <a href="${member.website}" target="_blank" rel="noopener">
                 Visit Website
             </a>
+            <p>Membership Level: ${member.mLevel}</p>
         </div>
     `;
 
