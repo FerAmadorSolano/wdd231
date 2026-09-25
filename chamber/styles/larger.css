@@ -1,6 +1,16 @@
 @media (min-width: 640px) {
+
+    #title {
+        font-size: 1.7rem;
+    }
+
     h1 {
         padding-left: 2rem;
+    }
+
+    .header-content img {
+        width: 50px;
+        height: 50px;
     }
 
     #menu-btn {
@@ -38,6 +48,33 @@
 
     .member-info {
         align-items: center;
+    }
+
+    .hero {
+        margin: 1.5rem auto 2rem;
+        max-width: 1200px;
+    }
+
+    .hero img {
+        height: 500px;
+        border-radius: 24px;
+    }
+
+    .hero-content {
+        width: 80%;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+        padding: 1rem 1.5rem;
+    }
+
+    .cta-button {
+        padding: 1rem 2rem;
+    }
+
+    .events-container {
+        grid-template-columns: repeat(3, 1fr);
     }
 
     footer {
