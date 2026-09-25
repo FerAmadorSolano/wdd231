@@ -260,9 +260,11 @@ h2 {
     text-align: center;
 }
 
-.events h2 {
+h2 {
     color: var(--accent-color);
     margin-bottom: 1rem;
+    font-size: 1.5rem;
+    ;
 }
 
 .text {
@@ -289,6 +291,122 @@ h2 {
 
 .event-card p {
     line-height: 1.5;
+}
+
+#current-weather {
+    background-color: var(--soft-color);
+    border-radius: 15px;
+    padding: 20px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#current-weather img {
+    display: block;
+    width: 90px;
+    margin: 0 auto;
+}
+
+#current-weather p {
+    margin: 8px 0;
+    font-size: 18px;
+}
+
+#current-weather p:first-of-type {
+    font-size: 24px;
+}
+
+#current-weather p:first-of-type strong,
+#current-weather p:last-child strong {
+    font-size: 17px;
+}
+
+
+#forecast-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.forecast-card {
+    padding: 12px;
+    text-align: center;
+    border-radius: 12px;
+    background-color: var(--soft-color);
+}
+
+.forecast-card p:first-of-type {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.forecast-card img {
+    display: block;
+    width: 65px;
+    margin: 2px auto;
+}
+
+.forecast-card h4 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.forecast-card p {
+    margin: 3px 0;
+}
+
+.forecast-card p:first-of-type {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.forecast-card p:last-child {
+    text-transform: capitalize;
+}
+
+.spotlights {
+    margin-top: 30px;
+}
+
+.spotlights h2 {
+    text-align: center;
+}
+
+#spotlight-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.spotlight-card {
+    padding: 15px;
+    text-align: center;
+    border-radius: 12px;
+    background-color: var(--soft-color);
+}
+
+.spotlight-card img {
+    display: block;
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin: 0 auto 10px;
+}
+
+.spotlight-card h3 {
+    margin: 8px 0;
+}
+
+.spotlight-card p {
+    margin: 5px 0;
+}
+
+.spotlight-card a {
+    display: inline-block;
+    margin-top: 10px;
 }
 
 /* FOOTER */
