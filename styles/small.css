@@ -189,6 +189,60 @@ main h1 {
     color: var(--black);
 }
 
+/* DIALOG */
+dialog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 80%;
+    max-width: 600px;
+    padding: 2rem;
+    border: none;
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    color: var(--black);
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+dialog h2 {
+    margin: 0 0 0.5rem 0;
+    color: var(--primary-color);
+    font-size: 1.8rem;
+}
+
+dialog h3 {
+    margin: 0 0 1.5rem 0;
+    font-size: 1.4rem;
+    color: var(--black);
+}
+
+dialog p {
+    margin: 1rem 0;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+#closeModal {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    border: none;
+    background: transparent;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#closeModal:hover {
+    transform: scale(1.1);
+}
+
 /* FOOTER */
 
 footer {

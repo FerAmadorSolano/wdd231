@@ -81,6 +81,7 @@ const courses = [
 ]
 
 const courseList = document.querySelector("#list");
+const courseDetails = document.querySelector('#course-details');
 
 function displayCourses(courseArray) {
 
@@ -96,8 +97,12 @@ function displayCourses(courseArray) {
             courseCard.classList.add("completed");
         }
 
-        courseList.appendChild(courseCard);
+        // Open the modal
+        courseCard.addEventListener("click", () => {
+            displayCourseDetails(course);
+        });
 
+        courseList.appendChild(courseCard);
     });
 
     const totalCredits = courseArray.reduce(
@@ -134,4 +139,42 @@ cseButton.addEventListener("click", () => {
     );
 
     displayCourses(cseCourses);
+});
+
+// DIALOG
+function displayCourseDetails(course) {
+    courseDetails.innerHTML = '';
+
+    courseDetails.innerHTML = `
+        <button id="closeModal">❌</button>
+
+        <h2>${course.subject} ${course.number}</h2>
+
+        <h3>${course.title}</h3>
+
+        <p><strong>Credits:</strong> ${course.credits}</p>
+
+        <p><strong>Certificate:</strong> ${course.certificate}</p>
+
+        <p>${course.description}</p>
+
+        <p>
+            <strong>Technologies:</strong>
+            ${course.technology.join(', ')}
+        </p>
+    `;
+
+    courseDetails.showModal();
+
+    const closeModal = document.querySelector('#closeModal');
+
+    closeModal.addEventListener('click', () => {
+        courseDetails.close();
+    });
+}
+
+courseDetails.addEventListener("click", (event) => {
+    if (event.target === courseDetails) {
+        courseDetails.close();
+    }
 });
