@@ -63,13 +63,9 @@ header {
     height: 40px;
 }
 
-h1,
 #title {
     font-size: 1.2rem;
     margin: 0;
-}
-
-#title {
     padding-left: 1rem;
     margin-left: 1rem;
     line-height: 1.1;
