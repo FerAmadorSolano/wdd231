@@ -4,7 +4,7 @@
     --pastel-green: #B8D6B2;
     --aqua-breeze: #A6D2C8;
     --seafoam: #8FC6B7;
-    --teal-mist: #6EA89E;
+    --teal-mist: #599187;
     --deep-forest: #263A35;
     --white: #FFFFFF;
 
@@ -38,8 +38,8 @@ body {
 /* HEADER */
 
 header {
-    background-color: var(--teal-mist);
-    color: var(--white);
+    background-color: var(--aqua-breeze);
+    color: var(--deep-forest);
     padding: 3rem 1rem;
     text-align: center;
 }
@@ -154,7 +154,7 @@ strong {
 
 .teal-mist {
     background-color: var(--teal-mist);
-    color: var(--white);
+    color: var(--deep-forest);
 }
 
 .deep-forest {
@@ -197,7 +197,7 @@ strong {
 
 .site-map-home {
     background-color: var(--teal-mist);
-    color: var(--white);
+    color: var(--deep-forest);
     padding: 1rem;
     border-radius: 10px;
     max-width: 300px;
@@ -255,8 +255,8 @@ strong {
 /* FOOTER */
 
 footer {
-    background-color: var(--teal-mist);
-    color: var(--white);
+    background-color: var(--aqua-breeze);
+    color: var(--deep-forest);
     text-align: center;
     padding: 2rem 1rem;
 }
