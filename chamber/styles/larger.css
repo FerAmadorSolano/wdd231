@@ -137,6 +137,65 @@
         height: 120px;
     }
 
+    .join-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+        align-items: start;
+    }
+
+    .membership-form {
+        padding: 2rem;
+    }
+
+    .membership-form h2,
+    .membership-levels h2 {
+        font-size: 1.6rem;
+    }
+
+    .membership-levels {
+        padding: 0;
+    }
+
+    #membership-container {
+        gap: 1.5rem;
+    }
+
+    .membership-card {
+        padding: 1.5rem;
+    }
+
+    .membership-card h3 {
+        font-size: 1.2rem;
+    }
+
+    .membership-form input,
+    .membership-form select,
+    .membership-form textarea {
+        padding: 0.85rem;
+    }
+
+    dialog {
+        width: min(500px, 70%);
+        padding: 2.5rem;
+    }
+
+    .thankyou {
+        margin: 4rem auto;
+        padding: 3rem;
+    }
+
+    .thankyou h1 {
+        font-size: 2.5rem;
+    }
+
+    #application-info {
+        padding: 2rem;
+    }
+
 
     footer {
         grid-template-columns: 1fr 1fr 1fr;
