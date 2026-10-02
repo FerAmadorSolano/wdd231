@@ -479,6 +479,8 @@ membership-form label {
 }
 
 .membership-card {
+    opacity: 0;
+    animation: membershipEntrance 0.7s ease-out forwards;
     padding: 1.5rem;
     border-radius: 10px;
     text-align: center;
@@ -553,13 +555,6 @@ dialog li {
         transform: translateY(0);
     }
 }
-
-
-.membership-card {
-    opacity: 0;
-    animation: membershipEntrance 0.7s ease-out forwards;
-}
-
 
 .membership-card:nth-child(1) {
     animation-delay: 0.1s;
