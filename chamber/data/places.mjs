@@ -15,7 +15,7 @@ export const places = [
         name: "Museo de las Culturas de Oaxaca",
         address: "Macedonio Alcalá s/n, Centro, Oaxaca de Juárez, Oaxaca",
         description: "A museum located in the former Santo Domingo convent featuring archaeological, historical, and ethnographic collections from Oaxaca.",
-        image: "museo-culturas-oaxaca.webp"
+        image: "museo-culturas.webp"
     },
     {
         name: "Jardín Etnobotánico de Oaxaca",
