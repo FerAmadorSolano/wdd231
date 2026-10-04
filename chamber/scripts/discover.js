@@ -2,7 +2,7 @@ import { places } from "../data/places.mjs";
 
 const discoverGrid = document.querySelector("#discover-grid");
 
-places.forEach((place, index) => {
+places.forEach((place) => {
 
     const card = document.createElement("article");
 
@@ -14,22 +14,8 @@ places.forEach((place, index) => {
         <figure>
             <img
                 src="images/${place.image}"
-                srcset="
-                    images/${place.image.replace(".webp", "-300.webp")} 300w,
-                    images/${place.image} 600w
-                "
-                sizes="
-                    (max-width: 640px) calc(100vw - 2rem),
-                    (max-width: 1024px) calc(50vw - 2.25rem),
-                    342px
-                "
                 alt="${place.name}"
-                width="300"
-                height="200"
-                ${index === 0
-                    ? 'fetchpriority="high"'
-                    : 'loading="lazy"'}
-            >
+                loading="lazy">
         </figure>
 
         <address>${place.address}</address>
