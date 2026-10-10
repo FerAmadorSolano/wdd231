@@ -1,0 +1,39 @@
+@media (min-width: 700px) {
+    header {
+        padding: 1rem 6%;
+        flex-wrap: nowrap;
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        width: auto;
+        gap: 0.5rem;
+    }
+
+    .hero {
+        min-height: 540px;
+        padding: 4rem 10%;
+    }
+
+    .category-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    .destination-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .planning-banner {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 4rem 10%;
+    }
+}

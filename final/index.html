@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Discover nature, culture, food, and unique experiences in Xalapa, Veracruz, and nearby towns with Ruta Xalapa.">
+
+    <meta name="author" content="Your Name">
+
+    <title>Xalapa Route | Discover Nearby</title>
+
+    <!--Favicon-->
+    <link rel="icon" href="images/favicon.ico">
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!--JAVASCRIPT-->
+    <script src="scripts/main.js" type="module"></script>
+</head>
+
+<body>
+    <header>
+        <a class="brand" href="index.html" aria-label="Ruta Xalapa Home">
+            <span class="brand-icon" aria-hidden="true">R</span>
+            <span>Xalapa Route</span>
+        </a>
+
+        <button class="menu-toggle" id="menu-toggle" aria-label="Open navigation menu" aria-expanded="false"
+            aria-controls="primary-nav">
+            ☰
+        </button>
+
+        <nav id="primary-nav" class="navigation" aria-label="Main navigation">
+            <a href="index.html" class="active" aria-current="page">Home</a>
+            <a href="destinations.html">Destinations</a>
+            <a href="plan.html">Plan Your Visit</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <img src="images/hero.webp" alt="The lush green landscapes surrounding Xalapa, Veracruz" class="hero-image">
+
+            <div class="hero-content">
+                <p class="eyebrow">YOUR LOCAL TRAVEL GUIDE</p>
+                <h1>Discover Xalapa</h1>
+
+                <p class="hero-description">
+                    Explore hidden gems, enjoy local flavors, and discover
+                    unforgettable experiences in Xalapa and its surrounding towns.
+                </p>
+
+                <a class="button" href="destinations.html">
+                    Explore Destinations
+                </a>
+            </div>
+        </section>
+
+        <section class="categories section-container">
+            <div class="section-heading">
+                <p class="eyebrow">FIND YOUR NEXT ADVENTURE</p>
+                <h2>What Would You Like to Explore?</h2>
+                <p>
+                    From peaceful gardens to charming nearby towns,
+                    find an experience that matches your interests.
+                </p>
+            </div>
+
+            <div class="category-grid">
+                <a class="category-card" href="destinations.html?category=nature">
+                    <span aria-hidden="true">🌿</span>
+                    <h3>Nature</h3>
+                    <p>Gardens, waterfalls, and outdoor escapes.</p>
+                </a>
+
+                <a class="category-card" href="destinations.html?category=culture">
+                    <span aria-hidden="true">🏛️</span>
+                    <h3>Culture</h3>
+                    <p>Museums, history, and local traditions.</p>
+                </a>
+
+                <a class="category-card" href="destinations.html?category=coffee">
+                    <span aria-hidden="true">☕</span>
+                    <h3>Coffee</h3>
+                    <p>Discover the coffee culture of the region.</p>
+                </a>
+
+                <a class="category-card" href="destinations.html?category=food">
+                    <span aria-hidden="true">🍽️</span>
+                    <h3>Local Food</h3>
+                    <p>Explore regional flavors and local cuisine.</p>
+                </a>
+            </div>
+        </section>
+
+        <section class="featured section-container">
+            <div class="section-heading">
+                <p class="eyebrow">PLACES WORTH DISCOVERING</p>
+                <h2>Explore the Region</h2>
+                <p>
+                    Start your journey with some of the experiences
+                    waiting for you around Xalapa.
+                </p>
+            </div>
+
+            <div id="featured-destinations" class="destination-grid">
+                <p class="loading-message" role="status">
+                    Discovering destinations...
+                </p>
+            </div>
+
+            <div class="section-action">
+                <a class="button button-secondary" href="destinations.html">
+                    View All Destinations
+                </a>
+            </div>
+        </section>
+
+        <section class="planning-banner">
+            <div>
+                <p class="eyebrow">YOUR NEXT GETAWAY STARTS HERE</p>
+                <h2>Make Your Own Adventure</h2>
+                <p>
+                    Find places that match your interests and start
+                    planning your next visit.
+                </p>
+            </div>
+
+            <a class="button" href="plan.html">Plan Your Visit</a>
+        </section>
+    </main>
+
+    <footer>
+        <a class="footer-brand" href="index.html">Xalapa Route</a>
+
+        <p>Discover Nearby. Live Differently.</p>
+
+        <div class="footer-links">
+            <a href="attributions.html">Attributions</a>
+            <a href="https://www.byui.edu/" target="_blank" rel="noopener noreferrer">
+                BYU-Idaho
+            </a>
+        </div>
+
+        <div class="footer-development">
+            <p>&copy; <span id="currentyear"></span> Xalapa Route | Fernanda Amador Solano | WDD 231</p>
+        </div>
+    </footer>
+</body>
+
+</html>

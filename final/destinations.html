@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore nature, culture, local food, and charming towns around Xalapa, Veracruz.">
+    <meta name="author" content="Your Name">
+    <title>Destinations | Ruta Xalapa</title>
+
+    <!--Favicon-->
+    <link rel="icon" href="images/favicon.ico">
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!--JAVASCRIPT-->
+    <script src="scripts/main.js" type="module"></script>
+    <script src="scripts/destinations-page.js" type="module"></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <a class="brand" href="index.html" aria-label="Ruta Xalapa home">
+            <span class="brand-name">Xalapa Route</span>
+            <span class="brand-tagline">Discover Nearby. Live Differently.</span>
+        </a>
+
+        <button class="menu-toggle" id="menu-toggle" aria-label="Open navigation menu" aria-expanded="false"
+            aria-controls="primary-nav">
+            ☰
+        </button>
+
+        <nav id="primary-nav" class="navigation" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="destinations.html" class="active" aria-current="page">Destinations</a>
+            <a href="plan.html">Plan Your Visit</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-intro">
+            <p class="eyebrow">Find your next adventure</p>
+            <h1>Explore Destinations</h1>
+            <p>From peaceful green spaces to cultural landmarks and charming nearby towns, discover a different side of
+                Veracruz.</p>
+        </section>
+
+        <section class="destinations-section">
+            <h2>Find Your Kind of Place</h2>
+
+            <div class="filter-controls" aria-label="Filter destinations by category">
+                <button class="filter-button active" data-category="all" aria-pressed="true">All Places</button>
+                <button class="filter-button" data-category="nature" aria-pressed="false">Nature</button>
+                <button class="filter-button" data-category="culture" aria-pressed="false">Culture</button>
+                <button class="filter-button" data-category="towns" aria-pressed="false">Nearby Towns</button>
+                <button class="filter-button" data-category="coffee" aria-pressed="false">Coffee</button>
+                <button class="filter-button" data-category="food" aria-pressed="false">Food</button>
+            </div>
+
+            <p id="results-count" class="results-count" role="status" aria-live="polite">Loading destinations...</p>
+
+            <div id="all-destinations" class="destination-grid">
+                <p class="loading-message" role="status">Discovering destinations...</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <a class="footer-brand" href="index.html">Xalapa Route</a>
+
+        <div class="footer-links">
+            <a href="attributions.html">Attributions</a>
+            <a href="https://www.byui.edu/" target="_blank" rel="noopener noreferrer">
+                BYU-Idaho
+            </a>
+        </div>
+
+        <div class="footer-development">
+            <p>&copy; <span id="currentyear"></span> Xalapa Route | Fernanda Amador Solano | WDD 231</p>
+        </div>
+    </footer>
+</body>
+
+</html>

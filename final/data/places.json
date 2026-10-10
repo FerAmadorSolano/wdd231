@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "name": "Parque Juárez",
+        "location": "Xalapa",
+        "category": "culture",
+        "description": "Enjoy panoramic views, shaded walkways, and a lively public space in the heart of Xalapa.",
+        "image": "images/parque-juarez.webp",
+        "alt": "Public park and city views in central Xalapa",
+        "featured": true
+    },
+    {
+        "id": 2,
+        "name": "Jardín Botánico Clavijero",
+        "location": "Xalapa",
+        "category": "nature",
+        "description": "Discover a botanical garden dedicated to the conservation of regional plant diversity.",
+        "image": "images/jardin-clavijero.webp",
+        "alt": "Green vegetation at the Clavijero Botanical Garden",
+        "featured": true
+    },
+    {
+        "id": 3,
+        "name": "Museo de Antropología de Xalapa",
+        "location": "Xalapa",
+        "category": "culture",
+        "description": "Explore archaeological collections and learn about the ancient cultures of Veracruz.",
+        "image": "images/museo-antropologia.webp",
+        "alt": "Museum of Anthropology in Xalapa",
+        "featured": true
+    },
+    {
+        "id": 4,
+        "name": "Paseo de Los Lagos",
+        "location": "Xalapa",
+        "category": "nature",
+        "description": "Take a relaxing walk around a scenic recreational area surrounded by greenery.",
+        "image": "images/paseo-lagos.webp",
+        "alt": "Lakeside walking area in Xalapa",
+        "featured": false
+    },
+    {
+        "id": 5,
+        "name": "Coatepec",
+        "location": "Coatepec",
+        "category": "towns",
+        "description": "Visit a nearby town known for its coffee culture, traditional architecture, and local atmosphere.",
+        "image": "images/coatepec.webp",
+        "alt": "Traditional architecture in Coatepec, Veracruz",
+        "featured": true
+    },
+    {
+        "id": 6,
+        "name": "Cascada de Texolo",
+        "location": "Near Xico",
+        "category": "nature",
+        "description": "Discover a waterfall surrounded by lush vegetation near the town of Xico.",
+        "image": "images/cascada-texolo.webp",
+        "alt": "Texolo Waterfall surrounded by green vegetation",
+        "featured": false
+    }
+]
