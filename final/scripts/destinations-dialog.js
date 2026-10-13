@@ -21,6 +21,7 @@ function openDestinationDialog(place) {
 
     dialogImage.src = place.image;
     dialogImage.alt = place.alt;
+    dialogImage.hidden = false;
     dialogLocation.textContent = place.location;
     dialogTitle.textContent = place.name;
     dialogDescription.textContent = place.description;
