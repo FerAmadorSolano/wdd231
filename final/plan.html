@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Plan your next visit around Xalapa, Veracruz, with Ruta Xalapa. Choose your interests and travel preferences.">
+    <meta name="author" content="Fernanda Amador Solano">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Plan Your Visit | Xalapa Route">
+    <meta property="og:description" content="Plan your next adventure and explore destinations around Xalapa, Veracruz.">
+    <meta property="og:url" content="https://feramadorsolano.github.io/wdd231/final/plan.html">
+    <meta property="og:image" content="https://feramadorsolano.github.io/wdd231/final/images/hero.webp">
+    <meta property="og:image:alt" content="Green landscapes around Xalapa, Veracruz">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="Xalapa Route">
+    <title> Your Plan | Xalapa Route</title>
+
+    <!--Favicon-->
+    <link rel="icon" href="images/favicon.ico">
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!--JAVASCRIPT-->
+    <script src="scripts/main.js" type="module"></script>
+    <script src="scripts/plan.js" type="module"></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <a class="brand" href="index.html" aria-label="Ruta Xalapa Home">
+            <span class="brand-icon" aria-hidden="true">R</span>
+            <span>Xalapa Route</span>
+        </a>
+
+        <button class="menu-toggle" id="menu-toggle" aria-label="Open navigation menu" aria-expanded="false"
+            aria-controls="primary-nav">
+            ☰
+        </button>
+
+        <nav id="primary-nav" class="navigation" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="destinations.html">Destinations</a>
+            <a href="plan.html" aria-current="page" class="active">Plan Your Visit</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-intro">
+            <p class="eyebrow">Your next adventure starts here</p>
+            <h1>Plan Your Visit</h1>
+            <p>Tell us what kind of experience you are looking for and start imagining your next getaway around Xalapa.
+            </p>
+        </section>
+
+        <section class="planning-section">
+            <div class="planning-copy">
+                <h2>Create Your Adventure</h2>
+                <p>Whether you love nature, culture, coffee, or local food, a little planning can help you make the most of your time.</p>
+                <p>Complete the form to save your preferences and view your planning summary.</p>
+            </div>
+
+            <form id="visit-form" action="form.html" method="get">
+                <div class="form-field">
+                    <label for="visitor-name">Your name</label>
+                    <input type="text" id="visitor-name" name="name" autocomplete="name" required minlength="2">
+                </div>
+
+                <div class="form-field">
+                    <label for="visit-date">Preferred visit date</label>
+                    <input type="date" id="visit-date" name="date" required>
+                </div>
+
+                <div class="form-field">
+                    <label for="visit-interest">What interests you most?</label>
+                    <select id="visit-interest" name="interest" required>
+                        <option value="">Choose an interest</option>
+                        <option value="nature">Nature and outdoor spaces</option>
+                        <option value="culture">Culture and history</option>
+                        <option value="towns">Nearby towns</option>
+                        <option value="coffee">Coffee experiences</option>
+                        <option value="food">Local food</option>
+                    </select>
+                </div>
+
+                <div class="form-field">
+                    <label for="travelers">Number of travelers</label>
+                    <select id="travelers" name="travelers" required>
+                        <option value="">Choose a group size</option>
+                        <option value="1">Just me</option>
+                        <option value="2">2 people</option>
+                        <option value="3-4">3–4 people</option>
+                        <option value="5+">5 or more people</option>
+                    </select>
+                </div>
+
+                <div class="form-field">
+                    <label for="visit-notes">Anything else you'd like to do? (Optional)</label>
+                    <textarea id="visit-notes" name="notes" rows="4"
+                        placeholder="For example, enjoy a quiet afternoon in nature..."></textarea>
+                </div>
+
+                <button class="button form-submit" type="submit">Create My Plan</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <a class="footer-brand" href="index.html">Xalapa Route</a>
+
+        <p>Discover Nearby. Live Differently.</p>
+
+        <div class="footer-links">
+            <a href="attributions.html">Attributions</a>
+            <a href="https://www.byui.edu/" target="_blank" rel="noopener noreferrer">
+                BYU-Idaho
+            </a>
+        </div>
+
+        <div class="footer-development">
+            <p>&copy; <span id="currentyear"></span> Xalapa Route | Fernanda Amador Solano | WDD 231</p>
+        </div>
+    </footer>
+</body>
+
+</html>

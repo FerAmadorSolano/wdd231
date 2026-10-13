@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Review your Ruta Xalapa visit preferences and get ready for your next adventure.">
+    <meta name="author" content="Fernanda Amador">
+    <title>Destinations | Xalapa Route</title>
+
+    <!--Favicon-->
+    <link rel="icon" href="images/favicon.ico">
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!--JAVASCRIPT-->
+    <script src="scripts/main.js" type="module"></script>
+    <script src="scripts/form-action.js" type="module"></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <a class="brand" href="index.html" aria-label="Ruta Xalapa Home">
+            <span class="brand-icon" aria-hidden="true">R</span>
+            <span>Xalapa Route</span>
+        </a>
+
+        <button class="menu-toggle" id="menu-toggle" aria-label="Open navigation menu" aria-expanded="false"
+            aria-controls="primary-nav">
+            ☰
+        </button>
+
+        <nav id="primary-nav" class="navigation" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="destinations.html">Destinations</a>
+            <a href="plan.html" class="active" aria-current="page">Plan Your Visit</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-intro">
+            <p class="eyebrow">Your adventure begins</p>
+            <h1>Thank You for Planning with Us!</h1>
+            <p>Your preferences have been saved. Here is a summary of your visit plan.</p>
+        </section>
+    
+        <section class="plan-summary">
+            <h2>Your Visit Summary</h2>
+            <div id="plan-details" aria-live="polite">
+                <p>Loading your plan...</p>
+            </div>
+            <div class="summary-actions">
+                <a class="button" href="destinations.html">Explore Destinations</a>
+                <a class="button secondary-button" href="plan.html">Edit My Plan</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <a class="footer-brand" href="index.html">Xalapa Route</a>
+
+        <p>Discover Nearby. Live Differently.</p>
+
+        <div class="footer-links">
+            <a href="attributions.html">Attributions</a>
+            <a href="https://www.byui.edu/" target="_blank" rel="noopener noreferrer">
+                BYU-Idaho
+            </a>
+        </div>
+
+        <div class="footer-development">
+            <p>&copy; <span id="currentyear"></span> Xalapa Route | Fernanda Amador Solano | WDD 231</p>
+        </div>
+    </footer>
+</body>
+
+</html>

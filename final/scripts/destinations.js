@@ -25,18 +25,19 @@ export function createPlaceCard(place) {
                 height="400"
                 loading="lazy"
             >
-
             <div class="destination-card-content">
                 <p class="eyebrow">${place.location}</p>
                 <h3>${place.name}</h3>
                 <p>${place.description}</p>
-                <a
-                    class="button"
-                    href="destinations.html"
-                    aria-label="Explore ${place.name}"
+
+                <button
+                    class="button details-button"
+                    type="button"
+                    data-place-id="${place.id}"
+                    aria-label="View details about ${place.name}"
                 >
-                    Explore Destination
-                </a>
+                    View Details
+                </button>
             </div>
         </article>
     `;

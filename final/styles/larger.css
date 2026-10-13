@@ -36,4 +36,40 @@
         justify-content: space-between;
         padding: 4rem 10%;
     }
+
+    .planning-section {
+        grid-template-columns: 0.8fr 1.2fr;
+        align-items: start;
+        gap: 3rem;
+    }
+
+    #visit-form {
+        padding: 2rem;
+    }
+
+    .plan-summary {
+        width: min(80%, 800px);
+        margin: 4rem auto;
+        padding: 2.5rem 3rem;
+    }
+
+    .plan-summary h2 {
+        font-size: 2.4rem;
+    }
+
+    #plan-details {
+        padding: 1.75rem 2rem;
+    }
+
+    .summary-actions {
+        gap: 1.5rem;
+    }
+
+    .summary-actions .button {
+        min-width: 200px;
+    }
+
+    #dialog-image {
+        height: 300px;
+    }
 }

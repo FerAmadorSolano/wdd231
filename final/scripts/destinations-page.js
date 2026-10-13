@@ -1,4 +1,3 @@
-
 import { getPlaces, createPlaceCard } from "./destinations.js";
 
 const destinationsContainer = document.querySelector("#all-destinations");
@@ -32,6 +31,7 @@ function filterPlaces(category) {
 
     filterButtons.forEach(button => {
         const isActive = button.dataset.category === category;
+
         button.classList.toggle("active", isActive);
         button.setAttribute("aria-pressed", String(isActive));
     });
@@ -43,7 +43,14 @@ async function initDestinationsPage() {
     const params = new URLSearchParams(window.location.search);
     const requestedCategory = params.get("category");
 
-    const validCategories = ["nature", "culture", "towns", "coffee", "food"];
+    const validCategories = [
+        "nature",
+        "culture",
+        "towns",
+        "coffee",
+        "food"
+    ];
+
     const initialCategory = validCategories.includes(requestedCategory)
         ? requestedCategory
         : "all";

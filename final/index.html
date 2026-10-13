@@ -8,9 +8,20 @@
     <meta name="description"
         content="Discover nature, culture, food, and unique experiences in Xalapa, Veracruz, and nearby towns with Ruta Xalapa.">
 
-    <meta name="author" content="Your Name">
+    <meta name="author" content="Fernanda Amador Solano">
 
-    <title>Xalapa Route | Discover Nearby</title>
+    <!-- Open Graph metadata -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Xalapa Route | Discover Nearby">
+    <meta property="og:description"
+        content="Discover nature, culture, coffee, and charming destinations around Xalapa, Veracruz.">
+    <meta property="og:url" content="https://feramadorsolano.github.io/wdd231/final/">
+    <meta property="og:image" content="https://feramadorsolano.github.io/wdd231/final/images/hero.webp">
+    <meta property="og:image:alt" content="Lush green landscapes surrounding Xalapa, Veracruz">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="Xalapa Route">
+
+    <title>Xalapa Route</title>
 
     <!--Favicon-->
     <link rel="icon" href="images/favicon.ico">
@@ -29,6 +40,7 @@
 
     <!--JAVASCRIPT-->
     <script src="scripts/main.js" type="module"></script>
+    <script src="scripts/destinations-dialog.js" type="module"></script>
 </head>
 
 <body>
@@ -49,6 +61,23 @@
             <a href="plan.html">Plan Your Visit</a>
         </nav>
     </header>
+
+    <dialog id="destination-dialog" aria-labelledby="dialog-title">
+        <div class="dialog-content">
+            <button type="button" id="close-dialog" class="dialog-close"
+                aria-label="Close destination details">X</button>
+
+            <img id="dialog-image" src="" alt="" width="600" height="400">
+
+            <p id="dialog-location" class="eyebrow"></p>
+            <h2 id="dialog-title"></h2>
+            <p id="dialog-description"></p>
+
+            <button type="button" id="dialog-done" class="button">
+                Close
+            </button>
+        </div>
+    </dialog>
 
     <main>
         <section class="hero">

@@ -58,5 +58,105 @@
         "image": "images/cascada-texolo.webp",
         "alt": "Texolo Waterfall surrounded by green vegetation",
         "featured": false
+    },
+    {
+        "id": 7,
+        "name": "Parque Ecológico Macuiltépetl",
+        "location": "Xalapa, Veracruz",
+        "category": "nature",
+        "description": "Explore a green ecological park centered around an extinct volcanic hill, with walking paths and opportunities to enjoy nature.",
+        "image": "images/macuiltepetl.webp",
+        "alt": "Green trees and natural surroundings at Macuiltépetl Ecological Park",
+        "featured": false
+    },
+    {
+        "id": 8,
+        "name": "Parque Los Tecajetes",
+        "location": "Xalapa, Veracruz",
+        "category": "nature",
+        "description": "Enjoy a peaceful urban park with lush vegetation, water features, and shaded paths in the heart of Xalapa.",
+        "image": "images/tecajetes.webp",
+        "alt": "Green vegetation and walking paths at Los Tecajetes Park",
+        "featured": false
+    },
+    {
+        "id": 9,
+        "name": "Parque Los Berros",
+        "location": "Xalapa, Veracruz",
+        "category": "nature",
+        "description": "Take a relaxing walk through one of Xalapa's traditional parks, surrounded by trees and local everyday life.",
+        "image": "images/berros.webp",
+        "alt": "Tree-lined walking paths at Los Berros Park",
+        "featured": false
+    },
+    {
+        "id": 10,
+        "name": "Museo Casa de Xalapa",
+        "location": "Xalapa, Veracruz",
+        "category": "culture",
+        "description": "Discover exhibitions and stories connected to Xalapa's history, traditions, and cultural identity.",
+        "image": "images/museo-casa.webp",
+        "alt": "Exterior of the Museo Casa de Xalapa",
+        "featured": false
+    },
+    {
+        "id": 11,
+        "name": "Museo de la Música Veracruzana",
+        "location": "Xalapa, Veracruz",
+        "category": "culture",
+        "description": "Explore Veracruz's musical heritage and learn about the traditions that have shaped the region's sound.",
+        "image": "images/museo-musica.webp",
+        "alt": "Museum building associated with Veracruz musical heritage",
+        "featured": false
+    },
+    {
+        "id": 12,
+        "name": "Callejón del Diamante",
+        "location": "Xalapa, Veracruz",
+        "category": "culture",
+        "description": "Wander through a charming historic alley known for its local shops, artisan products, and lively atmosphere.",
+        "image": "images/callejon-diamante.webp",
+        "alt": "Historic alley with local shops in downtown Xalapa",
+        "featured": false
+    },
+    {
+        "id": 13,
+        "name": "Xico",
+        "location": "Xico, Veracruz",
+        "category": "towns",
+        "description": "Visit a picturesque town known for its traditional architecture, regional cuisine, and surrounding green landscapes.",
+        "image": "images/xico.webp",
+        "alt": "Traditional streets and architecture in Xico, Veracruz",
+        "featured": false
+    },
+    {
+        "id": 14,
+        "name": "Naolinco",
+        "location": "Naolinco, Veracruz",
+        "category": "towns",
+        "description": "Discover a traditional town known for its crafts, leather goods, and distinctive regional culture.",
+        "image": "images/naolinco.webp",
+        "alt": "Traditional architecture and streets in Naolinco, Veracruz",
+        "featured": false
+    },
+    {
+        "id": 15,
+        "name": "La Estancia de los Tecajetes",
+        "location": "Xalapa, Veracruz",
+        "category": "food",
+        "description": "Enjoy a taste of regional cuisine and discover flavors inspired by Veracruz's culinary traditions.",
+        "image": "images/estancia-tecajetes.webp",
+        "alt": "Regional food served at a restaurant in Xalapa",
+        "featured": false
+    },
+    {
+        "id": 16,
+        "name": "Caferencial",
+        "location": "Hidalgo 10, Centro, Xalapa, Veracruz",
+        "category": "coffee",
+        "description": "Discover specialty coffee in downtown Xalapa. Caferencial focuses on carefully selected local beans, espresso, and handcrafted brewing methods.",
+        "image": "images/caferencial.webp",
+        "alt": "Specialty coffee served at a café in downtown Xalapa",
+        "featured": false
     }
 ]

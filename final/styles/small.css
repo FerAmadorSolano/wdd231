@@ -383,6 +383,234 @@ header {
     margin-bottom: 1.5rem;
 }
 
+/* DIALOG */
+#destination-dialog {
+    width: min(90%, 600px);
+    max-width: 600px;
+    max-height: 85vh;
+    margin: auto;
+    padding: 0;
+    overflow-y: auto;
+    border: none;
+    border-radius: 16px;
+    background-color: var(--white);
+    color: var(--deep-forest);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
+}
+
+#destination-dialog::backdrop {
+    background-color: rgba(38, 58, 53, 0.7);
+}
+
+.dialog-content {
+    position: relative;
+    padding: 1.5rem;
+}
+
+#dialog-image {
+    display: block;
+    width: 100%;
+    height: 240px;
+    margin-bottom: 1.25rem;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+#dialog-title {
+    margin: 0.5rem 0 1rem;
+    color: var(--deep-forest);
+    font-family: "Cormorant Garamond", serif;
+    font-size: 2rem;
+}
+
+#dialog-description {
+    line-height: 1.7;
+}
+
+.dialog-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 1;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--deep-forest);
+    color: var(--white);
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+#dialog-done {
+    margin-top: 1rem;
+    padding: 0.75rem 1.25rem;
+    border: none;
+    border-radius: 6px;
+    background-color: var(--deep-forest);
+    color: var(--white);
+    font: inherit;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#dialog-done:hover,
+.dialog-close:hover {
+    background-color: var(--teal-mist);
+    color: var(--deep-forest);
+}
+
+/* PLAN PAGE */
+.planning-section {
+    display: grid;
+    gap: 2rem;
+    padding: 3rem 6%;
+}
+
+.planning-copy h2 {
+    color: var(--deep-forest);
+    font-family: "Cormorant Garamond", serif;
+    font-size: 2rem;
+}
+
+#visit-form {
+    display: grid;
+    gap: 1.25rem;
+    padding: 1.5rem;
+    background-color: var(--white);
+    border: 1px solid var(--soft-mint);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(38, 58, 53, 0.08);
+}
+
+.form-field {
+    display: grid;
+    gap: 0.5rem;
+}
+
+.form-field label {
+    color: var(--deep-forest);
+    font-weight: 600;
+}
+
+.form-field input,
+.form-field select,
+.form-field textarea {
+    width: 100%;
+    min-width: 0;
+    padding: 0.8rem;
+    border: 1px solid var(--teal-mist);
+    border-radius: 6px;
+    background-color: var(--white);
+    color: var(--deep-forest);
+    font: inherit;
+}
+
+.form-field input:focus,
+.form-field select:focus,
+.form-field textarea:focus {
+    outline: 3px solid var(--aqua-breeze);
+    outline-offset: 2px;
+}
+
+.form-submit {
+    width: 100%;
+    padding: 0.9rem 1rem;
+    border: none;
+    border-radius: 6px;
+    background-color: var(--deep-forest);
+    color: var(--white);
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.form-submit:hover {
+    background-color: var(--teal-mist);
+    color: var(--deep-forest);
+}
+
+/* FORM PLAN PAGE */
+.plan-summary {
+    width: min(90%, 700px);
+    margin: 3rem auto;
+    padding: 2rem;
+    background-color: var(--white);
+    border: 1px solid var(--pastel-green);
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(38, 58, 53, 0.12);
+}
+
+.plan-summary h2 {
+    margin-bottom: 1.5rem;
+    color: var(--deep-forest);
+    font-family: "Cormorant Garamond", serif;
+    font-size: 2rem;
+    text-align: center;
+}
+
+#plan-details {
+    padding: 1.25rem;
+    background-color: var(--soft-mint);
+    border-radius: 10px;
+}
+
+#plan-details p {
+    margin-bottom: 1rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid rgba(38, 58, 53, 0.15);
+    color: var(--deep-forest);
+    line-height: 1.7;
+}
+
+#plan-details p:last-child {
+    margin-bottom: 0;
+    border-bottom: none;
+}
+
+#plan-details strong {
+    color: var(--deep-forest);
+    font-weight: 700;
+}
+
+.summary-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.75rem;
+}
+
+.summary-actions .button {
+    display: inline-block;
+    min-width: 180px;
+    padding: 0.85rem 1.1rem;
+    border: 2px solid var(--deep-forest);
+    border-radius: 8px;
+    background-color: var(--deep-forest);
+    color: var(--white);
+    text-align: center;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.2s ease;
+}
+
+.summary-actions .secondary-button {
+    background-color: transparent;
+    color: var(--deep-forest);
+}
+
+.summary-actions .button:hover {
+    background-color: var(--teal-mist);
+    border-color: var(--teal-mist);
+    color: var(--deep-forest);
+}
+
+.summary-actions .button:focus-visible {
+    outline: 3px solid var(--teal-mist);
+    outline-offset: 3px;
+}
+
 footer {
     padding: 2.5rem 5%;
     background-color: var(--teal-mist);
